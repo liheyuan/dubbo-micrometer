@@ -1,7 +1,4 @@
-# Dubbo + SpringCloud + MicroMeter Demo
-
-演示如何在dubbo中自定义micrometer监控项
-
+# Dubbo + Spring Boot + MicroMeter Demo
 ## 启动方法
 1. 启动nacos
 ```shell

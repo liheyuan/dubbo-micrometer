@@ -5,16 +5,16 @@ dubbo:
     name: dubbo
     port: -1
   registry:
-    address: spring-cloud://localhost
+    address: nacos://localhost:8848
   cloud:
     subscribed-services: dubbo-springboot-micrometer-server
+
+nacos:
+  discovery:
+    register:
+      healthy: false
+    server-addr: localhost:8848
+
 spring:
   application:
     name: dubbo-consumer
-  cloud:
-    nacos:
-      discovery:
-        server-addr: localhost:8848
-  main:
-    allow-bean-definition-overriding: true
-    allow-circular-references: true
